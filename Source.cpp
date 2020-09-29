@@ -20,14 +20,18 @@ public:
 	bool freezer = false;
 	bool navigator = false;
 };
-
-signed main() {
+class car {
+public:
 	body A1;
 	inlook A2;
 	door A3;
+};
+
+signed main() {
+	car toyota;
 	while (1) {
 		std::cin >> a;
-		if (a == 1) std::cin >> A3.color;
+		if (a == 1) std::cin >> toyota.A3.color;
 		if (a == 2) std::cin >> A3.size;
 		if (a == 3) std::cin >> A1.color;
 		if (a == 4) std::cin >> A1.size;
